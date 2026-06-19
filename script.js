@@ -1,11 +1,10 @@
 function next(num){
 
-```
 document
 .querySelectorAll('.screen')
 .forEach(screen=>{
 
-    screen.classList.remove('active');
+screen.classList.remove('active');
 
 });
 
@@ -14,10 +13,12 @@ document
 .classList.add('active');
 
 window.scrollTo({
-    top:0,
-    behavior:'smooth'
+
+top:0,
+
+behavior:'smooth'
+
 });
-```
 
 }
 
@@ -26,62 +27,58 @@ document.getElementById('btnNo');
 
 if(btnNo){
 
-```
 btnNo.addEventListener('mouseover',()=>{
 
-    btnNo.style.position='fixed';
+btnNo.style.position='fixed';
 
-    btnNo.style.left =
-    Math.random() *
-    (window.innerWidth - 120)
-    + 'px';
+btnNo.style.left=
+Math.random()*
+(window.innerWidth-120)
++'px';
 
-    btnNo.style.top =
-    Math.random() *
-    (window.innerHeight - 80)
-    + 'px';
+btnNo.style.top=
+Math.random()*
+(window.innerHeight-80)
++'px';
 
 });
-```
 
 }
 
 const emojis = [
-"🌼",
-"🌸",
-"🌷",
-"💜",
-"🤍"
+"❤️",
+"💖",
+"💕",
+"💗",
+"💘"
 ];
 
-for(let i=0;i<40;i++){
+for(let i=0;i<25;i++){
 
-```
-const flower =
+const heart =
 document.createElement("div");
 
-flower.classList.add("heart");
+heart.classList.add("heart");
 
-flower.innerHTML =
+heart.innerHTML =
 emojis[
-    Math.floor(
-        Math.random()*emojis.length
-    )
+Math.floor(
+Math.random()*emojis.length
+)
 ];
 
-flower.style.left =
+heart.style.left =
 Math.random()*100 + "vw";
 
-flower.style.fontSize =
+heart.style.fontSize =
 (Math.random()*20+15)+"px";
 
-flower.style.animationDuration =
+heart.style.animationDuration =
 (Math.random()*6+6)+"s";
 
-flower.style.animationDelay =
+heart.style.animationDelay =
 (Math.random()*5)+"s";
 
-document.body.appendChild(flower);
-```
+document.body.appendChild(heart);
 
 }
