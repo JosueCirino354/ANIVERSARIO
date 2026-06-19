@@ -5,19 +5,19 @@ box-sizing:border-box;
 }
 
 body{
+    font-family:'Segoe UI',sans-serif;
 
-font-family:'Segoe UI',sans-serif;
+    background:
+    linear-gradient(
+        135deg,
+        #d8b4fe,
+        #c4b5fd,
+        #e9d5ff
+    );
 
-background:
-linear-gradient(
-135deg,
-#ff9a9e,
-#fad0c4
-);
-
-overflow-y:auto;
-overflow-x:hidden;
-
+    overflow-y:auto;
+    overflow-x:hidden;
+    min-height:100vh;
 }
 
 .screen{
